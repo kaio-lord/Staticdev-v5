@@ -1,102 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The better unblocked games website." />
-    <meta
-      name="keywords"
-      content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git"
-    />
-    <meta name="author" content="3kh0" />
-    <meta content="3kh0" property="og:title" />
-    <meta
-      content="The better unblocked games website."
-      property="og:description"
-    />
-    <meta content="/images/logo.avif" property="og:image" />
-    <title>404 Error ' 3kh0</title>
-    <link href="/images/logo.avif" rel="icon" />
-    <link href="/css/index.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="navitems">
-        <div class=navleft>
-        <img
-          alt="Home"
-          src="./images/logo.avif"
-          class="navlogo"
-          draggable="false"
-        />
-         <span>3kh0</span>
-        </div>
-        <a class="navitem" href="index.html"><span class="material-symbols-rounded">home</span><span>Home</span></a>
-        <a class="navitem" href="./projects"><span class="material-symbols-rounded">videogame_asset</span><span>Projects</span></a>
-        <a class="navitem" href="./search"><span class="material-symbols-rounded">search</span><span>Search</span></a>
-        <a class="navitem" href="./cinny"><span class="material-symbols-rounded">chat</span><span>Chat</span></a>
-        <a class="navitem" href="./settings"><span class="material-symbols-rounded">settings</span><span>Settings</span></a>
-      </div>
-    </div>
-    <div id="particles-js"></div>
-    <div class="title">404 Error</div>
-    <div class="message">This page does not exist!</div>
-    <center>
-      <button class="button" onclick="statsForNerds()">Stats for nerds</button>
-    </center>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>404 Error</title>
+  <link href="404.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+  --primary-color: #FF5733; 
+  --secondary-color: #c491f4; 
+  --tertiary-color: #20B2AA; 
+  --bg-color: #000; 
+  --text-color: #FFFFFF; 
+}
 
-    <div id="sfn" style="display: none" class="message">
-      Please make a issue about this happening on the
-      <a href="https://github.com/3kh0/3kh0.github.io/issues"
-        >Github issue tracker</a
-      >
-      Requested URL: <span id="full">Fetching...</span><br />
-      Referrer: <span id="ref">Fetching...</span><br />
-      Title: <span id="title">Fetching...</span><br />
-      Screen height: <span id="height">Fetching...</span><br />
-      Screen width: <span id="width">Fetching...</span><br />
-      Window height: <span id="winheight">Fetching...</span><br />
-      Window width: <span id="winwidth">Fetching...</span><br />
-      Cookies: <span id="cookie">Fetching...</span><br />
-      User agent: <span id="ua">Fetching...</span><br />
-      OS platform: <span id="plat">Fetching...</span><br />
-      Online: <span id="online">Fetching...</span><br />
-      Error code: 404<br />
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+  }
+  
+  .content {
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  
+  h1 {
+    font-size: 100px;
+    color: var(--primary-color);
+    margin:0;
+    cursor:pointer;
+    transition: color 0.3s ease;
+  }
+  
+  h1:hover {
+    color: var(--secondary-color);
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    font-size:15px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background:transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid var(--secondary-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: 0px 5px 5px var(--tertiary-color), 5px 0px 5px var(--secondary-color);
+  }
+  
+  .desc {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+    margin-top: -30px;
+  }
+  
+  .desc p {
+    margin-top: -10px;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="logo-wrapper">
+      <h1>Uh oh!</h1>
+      <h3>Seems like you ran into an error</h3>
+      <br>
     </div>
-
-    <script>
-      function statsForNerds() {
-        var x = document.getElementById("sfn");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-          console.log("[ℹ️] Showing the stats for nerds!");
-        } else {
-          x.style.display = "none";
-          console.log("[ℹ️] Hiding the stats for nerds!");
-        }
-      }
-      document.getElementById("full").innerText = window.location.href;
-      document.getElementById("ref").innerHTML = document.referrer;
-      document.getElementById("title").innerText = document.title;
-      document.getElementById("height").innerHTML = screen.height + "px";
-      document.getElementById("width").innerHTML = screen.width + "px";
-      document.getElementById("winheight").innerHTML =
-        window.innerHeight + "px";
-      document.getElementById("winwidth").innerHTML = window.innerWidth + "px";
-      document.getElementById("cookie").innerText = navigator.cookieEnabled;
-      document.getElementById("ua").innerHTML = navigator.userAgent;
-      document.getElementById("plat").innerHTML = navigator.platform;
-      document.getElementById("online").innerHTML = navigator.onLine;
-    </script>
-    <footer>
-      <span>&copy; Realm Services 2024</span>
-    </footer>
-    <script src=
-        "particles.js-master/particles.js">
-    </script>
-    <script src=
-        "/particles.js-master/demo/js/app.js">
-    </script>
-    <script src="/js/index.js"></script>
-  </body>
+    <div class="desc">
+      <p>The server could not route your request. :(</p>
+      <p id="uv-error"></p>
+      <code id="uv-error-code"></code>
+      <button id="uv-register-sw" value="Register service worker">Register ServiceWorker</button>
+      <button value="Go home" onclick="window.open('/', '_self')">Go to Home</button>
+    </div>
+  </div>
+  <div id="particles-js"></div>
+  <script src="particles.min.js"></script>
+  <script src="/script.js"></script>
+  <script src="uv/uv.bundle.js"></script>
+  <script src="/js/themes.js"></script>
+  <script src="uv/uv.config.js"></script>
+  <script src="register-sw.js"></script>
+  <script src="error.js"></script>
+</body>
 </html>
