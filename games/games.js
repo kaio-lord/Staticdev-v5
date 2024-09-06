@@ -5,7 +5,7 @@ fetch('/games/games.json')
 
         const container = document.querySelector('.g-container');
         container.innerHTML = '';
-        const gamecdn = "/cdn/"
+        const gamecdn = "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/"
 
         games.forEach(game => {
             const link = document.createElement('a');
