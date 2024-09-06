@@ -11,7 +11,7 @@ fetch('/games/games.json')
             const link = document.createElement('a');
             link.className = 'g';
             //link.href = gamecdn + game.root + "/" + game.file;
-            link.href = "play/index.html";
+            link.href = "/games/play/index.html";
             const img = document.createElement('img');
             img.src = gamecdn + game.root + "/" + game.img;
 
