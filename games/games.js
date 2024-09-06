@@ -1,4 +1,4 @@
-fetch('games.json')
+fetch('/games/games.json')
     .then(response => response.json())
     .then(games => {
         games.sort((a, b) => a.name.localeCompare(b.name));
