@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/search/',
+    prefix: '/uv/',
     bare:'https://v5.3kh0.net/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
