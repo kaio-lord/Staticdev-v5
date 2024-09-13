@@ -12,4 +12,4 @@
 # Hosting
 You can host this version anywhere that supports static deployment, including GitHub Pages
 
-- GitHub Pages deployment will only work currently with example.github.com links, not example.github.com/site/
+- GitHub Pages deployment will only work currently with example.github.io links, not example.github.io/site/
